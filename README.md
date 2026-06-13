@@ -6,7 +6,7 @@ Detects priority mismatches in CRM support tickets using self-supervised learnin
 **Model:** https://huggingface.co/aryansharma72062/sia-distilbert
 
 
-![results](results screenshots/screenshot.png)
+![results](results screenshots/Screenshot 2026-06-13 at 11.43.54 PM.png)
 
 ---
 
