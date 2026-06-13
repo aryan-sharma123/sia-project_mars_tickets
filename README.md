@@ -5,6 +5,9 @@ Detects priority mismatches in CRM support tickets using self-supervised learnin
 **Live App:** https://sia-projectmarstickets-t4gzajru3ohrovuqff7stn.streamlit.app  
 **Model:** https://huggingface.co/aryansharma72062/sia-distilbert
 
+
+![results](results screenshots/screenshot.png)
+
 ---
 
 ## What it does
