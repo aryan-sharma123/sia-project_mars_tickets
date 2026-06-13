@@ -1,9 +1,17 @@
+NAME - ARYAN
+EN NO - 23112022
+email - aryan@ch.iitr.ac.in
+
+
 # Support Integrity Auditor (SIA)
 
 Detects priority mismatches in CRM support tickets using self-supervised learning — no pre-labeled mismatch data needed.
 
 **Live App:** https://sia-projectmarstickets-t4gzajru3ohrovuqff7stn.streamlit.app  
 **Model:** https://huggingface.co/aryansharma72062/sia-distilbert
+
+
+*** ALL THE NECESSARY RESULTS HAVE BEEN STORED TO RESULTS SCREENSHOTS FOLDER, IT INCLUDES SINGLE TICKET RESULT , demo_tickets.csv results and DASHBOARDS.
 
 
 
