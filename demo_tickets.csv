@@ -1,0 +1,26 @@
+Ticket_ID,Ticket_Subject,Ticket_Description,Priority_Level,Ticket_Channel,Issue_Category,Customer_Email,Resolution_Time_Hours
+T001,payment gateway down,our entire payment system has been down since this morning none of our customers can checkout we are losing revenue every minute,Low,Chat,Technical,ops@enterprise-corp.com,5
+T002,cannot access account,all users in our company are locked out of the system completely we cannot do any work today,Low,Chat,Account,admin@bigcorp.io,4
+T003,data breach concern,we noticed unauthorized access to our customer database containing sensitive information possible security breach,Medium,Chat,Technical,security@fintech.com,7
+T004,system crash production,application keeps crashing in production environment affecting all customers cannot access service,Low,Chat,Technical,dev@startup.io,6
+T005,fraud detected on account,multiple unauthorized transactions detected on customer accounts possible fraud attack happening now,Medium,Chat,Fraud,fraud@bank.com,3
+T006,server completely down,our main server is down entire website is unavailable customers are complaining on social media,Low,Email,Technical,webmaster@ecom.com,8
+T007,urgent login issues,cannot login to admin panel need to process urgent orders entire team is blocked,Low,Chat,Account,manager@retail.com,5
+T008,URGENT button color issue,CRITICAL: the submit button color does not match our brand guidelines please fix immediately,Critical,Email,Technical,designer@agency.com,145
+T009,Critical newsletter font,This is extremely urgent the font size in our weekly newsletter looks slightly different please fix asap,High,Email,General Inquiry,marketing@gmail.com,132
+T010,urgent profile picture,My profile picture is not centered properly this is very urgent needs immediate attention,High,Email,Account,user@yahoo.com,156
+T011,critical: wrong timezone shown,URGENT CRITICAL the timezone shown in my dashboard is off by one hour during daylight saving,Critical,Web Form,General Inquiry,user2@gmail.com,140
+T012,high priority: typo in email,The welcome email has a typo in the third paragraph please correct this high priority issue,High,Email,General Inquiry,customer@hotmail.com,163
+T013,billing question,hi just wondering when my next invoice will be generated no rush,Low,Email,Billing,user3@gmail.com,68
+T014,password reset help,how do i reset my password i forgot it,Low,Web Form,Account,user4@yahoo.com,45
+T015,feature suggestion,it would be nice if you could add dark mode to the app just a suggestion,Low,Email,General Inquiry,user5@gmail.com,72
+T016,invoice download issue,i cannot download my invoice the page shows an error 500,Medium,Chat,Billing,accounts@company.com,22
+T017,api rate limit hit,our integration is hitting rate limits during peak hours causing delays,Medium,Web Form,Technical,dev@techco.com,28
+T018,critical data corruption,database corruption detected in production all records from last 24 hours may be lost need immediate help,Critical,Phone,Technical,dba@enterprise.com,2
+T019,major outage all services,complete service outage across all regions customers cannot access anything sla breach imminent,Critical,Phone,Technical,oncall@bigcorp.com,1
+T020,subscription renewal question,when does my subscription renew and how do i upgrade to the next plan,Low,Email,Billing,user6@gmail.com,80
+T021,report generation slow,monthly reports are taking over 30 minutes to generate affecting our end of month process,Medium,Web Form,Technical,analyst@corp.com,31
+T022,user cannot be deleted,trying to delete an old user account but getting permission error in admin panel,Medium,Chat,Account,admin2@company.com,19
+T023,missing feature in export,the csv export is missing two columns that used to be there broke after last update,Medium,Web Form,Technical,ops2@startup.com,26
+T024,account compromised,my account was hacked someone changed my password and email i need help urgently,High,Chat,Account,victim@gmail.com,9
+T025,general how to question,how do i add a second user to my account just getting started with the product,Low,Web Form,General Inquiry,newuser@gmail.com,55
