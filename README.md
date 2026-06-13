@@ -1,6 +1,6 @@
-*** NAME - ARYAN
-*** EN NO - 23112022
-*** email - aryan@ch.iitr.ac.in
+## NAME - ARYAN
+## EN NO - 23112022
+## email - aryan@ch.iitr.ac.in
 
 
 # Support Integrity Auditor (SIA)
@@ -11,7 +11,7 @@ Detects priority mismatches in CRM support tickets using self-supervised learnin
 **Model:** https://huggingface.co/aryansharma72062/sia-distilbert
 
 
-*** ALL THE NECESSARY RESULTS HAVE BEEN STORED TO RESULTS SCREENSHOTS FOLDER, IT INCLUDES SINGLE TICKET RESULT , demo_tickets.csv results and DASHBOARDS.
+## ALL THE NECESSARY RESULTS HAVE BEEN STORED TO RESULTS SCREENSHOTS FOLDER, IT INCLUDES SINGLE TICKET RESULT , demo_tickets.csv results and DASHBOARDS.
 
 
 
