@@ -17,8 +17,8 @@
         "interpretation": "submitted via chat"
       }
     ],
-    "constraint_analysis": "The ticket priority mismatch is due to the subject line indicating an urgent password reset request, while the description discusses a non-urgent request for upgrading to the enterprise plan and mentions an unclear reference to 'effect bad upon edge wall.' Additionally, the resolution time of 106 hours suggests a delay in addressing the issue, indicating that it should have been assigned a higher priority.",
-    "confidence": "0.974"
+    "constraint_analysis": "The priority mismatch in this ticket is due to the subject line indicating a password reset request, while the description pertains to upgrading to the enterprise plan and an unclear impact on 'edge wall'. Additionally, the long resolution time of 106 hours suggests that the current priority level (Medium) may not adequately reflect the urgency required for addressing this customer inquiry.",
+    "confidence": "0.979"
   },
   {
     "ticket_id": "TKT-100007",
@@ -38,8 +38,8 @@
         "interpretation": "submitted via email"
       }
     ],
-    "constraint_analysis": "The priority mismatch in this ticket is due to the following reasons:\n\n1. The subject line indicates an urgent issue with a failed payment, yet the description mentions a subscription renewal, which may not be immediately critical.\n2. Despite the seemingly immediate concern (failed payment), the resolution time was 27 hours, suggesting that the response and resolution process were handled within a reasonable timeframe for a medium priority ticket.\n3. The ticket was initially assigned as medium priority, which could suggest that the support team considered it appropriate based on the provided information at the time of assignment. However, if the customer expected a higher level of urgency, the priority might need to be re-evaluated.",
-    "confidence": "0.958"
+    "constraint_analysis": "The priority mismatch in this ticket might be due to the following reasons:\n\n1. Despite the automatic renewal of the subscription, the user explicitly stated a desire to cancel, suggesting an immediate need for resolution.\n2. The fact that 'grow soldier minute capital matter' is mentioned could imply potential financial implications or confusion about the subscription charges.\n3. A 27-hour response time on a medium priority ticket could be considered too long, especially given the user's clear intent to cancel the service. This might indicate that a higher priority should have been assigned to address the user's concern more promptly.",
+    "confidence": "0.941"
   },
   {
     "ticket_id": "TKT-100015",
@@ -59,8 +59,29 @@
         "interpretation": "submitted via email"
       }
     ],
-    "constraint_analysis": "The ticket priority mismatch arises because the subject line and description both indicate a feature request (which typically requires high priority), while the ticket was assigned as 'Low'. This discrepancy might be due to the support system interpreting the request for a roadmap as a lower-priority information inquiry, rather than a feature request that potentially impacts users. However, the 49-hour resolution time suggests that the issue was addressed appropriately, even if not with the priority it initially deserved.",
-    "confidence": "0.965"
+    "constraint_analysis": "The ticket has a priority mismatch as the subject line suggests a feature request (\"feature request - seven\"), but the description is general and does not indicate an urgent or high-priority issue (\"is there a roadmap for new features this year?\"). Additionally, the resolution time of 49 hours was relatively quick, which might suggest that the initial priority assignment was low. However, without further context regarding the importance of this feature to the user or the company, it's challenging to definitively determine if the priority should be higher.",
+    "confidence": "0.956"
+  },
+  {
+    "ticket_id": "TKT-100046",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "114h",
+        "interpretation": "114h is 4.8x above expected 24h for Medium"
+      },
+      {
+        "signal": "channel",
+        "value": "web form",
+        "interpretation": "submitted via web form"
+      }
+    ],
+    "constraint_analysis": "The ticket has a priority mismatch as it is categorized as medium priority but the content of the description suggests a request for information rather than an urgent issue, and the request is not time-sensitive (related to a non-profit discount). Additionally, the resolution time of 114 hours indicates that the current priority level may not accurately reflect the actual urgency of the ticket.",
+    "confidence": "0.669"
   },
   {
     "ticket_id": "TKT-100061",
@@ -85,8 +106,8 @@
         "interpretation": "submitted via chat"
       }
     ],
-    "constraint_analysis": "The ticket has a priority mismatch because, despite being assigned as critical, it has taken 18 hours to resolve and the issue is related to a 500 internal server error on an API endpoint, which indicates a technical problem rather than a severe service disruption. A high priority would be more appropriate based on the inferred severity of the described issue.",
-    "confidence": "0.95"
+    "constraint_analysis": "The priority mismatch in this ticket can be attributed to two main factors. Firstly, despite the subject mentioning screen freezes, the description specifies a 500 internal server error on an API endpoint, which indicates a system-level issue rather than a user interface problem typically associated with screen freezing. Secondly, the resolution time of 18 hours indicates that the current priority level of Critical may not accurately reflect the urgency required to resolve this issue efficiently, making it more suitable for a High priority rating instead.",
+    "confidence": "0.981"
   },
   {
     "ticket_id": "TKT-100079",
@@ -106,8 +127,8 @@
         "interpretation": "submitted via web form"
       }
     ],
-    "constraint_analysis": "The priority mismatch in this ticket is due to the customer expressing a desire to cancel an unwanted automatic renewal of their subscription (a potential financial loss), and seeking a refund, which indicates an urgent need for attention. Additionally, the channel being a web form suggests that the customer might have taken significant effort to reach out, indicating a higher level of urgency than the assigned 'Low' priority. The inferred priority should be 'High'.",
-    "confidence": "0.911"
+    "constraint_analysis": "The priority mismatch in this ticket can be attributed to the following reasons:\n\n1. The user's request for a refund suggests an urgent issue, as they were charged automatically despite wanting to cancel their subscription.\n2. The nature of the service involved, Attorney Data Pattern Room, might entail sensitive and time-critical data handling, necessitating a higher priority.\n3. A resolution time of 7 hours for a low-priority ticket is comparatively long, indicating that similar issues might require shorter response times to maintain customer satisfaction.",
+    "confidence": "0.869"
   },
   {
     "ticket_id": "TKT-100086",
@@ -127,8 +148,8 @@
         "interpretation": "submitted via email"
       }
     ],
-    "constraint_analysis": "The ticket priority mismatch arises due to the urgency of the request not being accurately reflected in its assigned priority level. Although the description is about seeking support operating hours for an upcoming college event, the resolution time of 66 hours suggests that the issue might require a higher priority since it has taken over two days to resolve, which could cause potential inconvenience or disruption for the event.",
-    "confidence": "0.953"
+    "constraint_analysis": "The ticket priority mismatch is due to the nature of the inquiry being a basic product question about support operating hours, which typically falls under a low priority level. However, the impending college event may require urgent attention and faster resolution, hence the discrepancy between the assigned \"Low\" priority and the potential need for a higher one. The extended resolution time of 66 hours further underscores the importance of reassessing the ticket's priority to ensure a more timely response.",
+    "confidence": "0.955"
   },
   {
     "ticket_id": "TKT-100087",
@@ -148,8 +169,8 @@
         "interpretation": "submitted via web form"
       }
     ],
-    "constraint_analysis": "The priority mismatch in this ticket may be due to the nature of the question being relatively straightforward (product question about a roadmap), yet the response time of 40 hours is significantly longer than usual for such queries. Additionally, the description contains an unrelated mention of a board attorney and possible republicans, which might have contributed to the system incorrectly categorizing this ticket as medium priority.",
-    "confidence": "0.957"
+    "constraint_analysis": "The priority mismatch in this ticket can be attributed to the subject and description not clearly indicating an urgent need for assistance. While the question about product features is important, it does not seem to require immediate attention, as indicated by a resolution time of 40 hours. Additionally, the mention of political affiliations in the description seems unrelated to the priority level assigned.",
+    "confidence": "0.956"
   },
   {
     "ticket_id": "TKT-100093",
@@ -169,8 +190,8 @@
         "interpretation": "submitted via chat"
       }
     ],
-    "constraint_analysis": "This ticket has a priority mismatch because although the data syncing issue has persisted for 24 hours, and the problem might be due to a user's family member interfering with file sharing, it is currently assigned a low priority. However, given the length of the issue and potential impact on productivity, it would typically require a higher priority classification to ensure prompt resolution.",
-    "confidence": "0.928"
+    "constraint_analysis": "The priority mismatch in this ticket is due to the urgency of the issue and its potential impact on the user's work. The data not syncing for 24 hours could potentially cause significant delays or issues, especially if the user's husband's activity is preventing file sharing. However, the ticket was assigned a low priority, which might not accurately reflect the severity and need for immediate attention. A more appropriate priority would be Medium or High to ensure prompt resolution of the problem.",
+    "confidence": "0.883"
   },
   {
     "ticket_id": "TKT-100120",
@@ -190,8 +211,8 @@
         "interpretation": "submitted via web form"
       }
     ],
-    "constraint_analysis": "This ticket has a priority mismatch because, although the subject and channel suggest a medium-level issue (changing email and submitted through web form), the description indicates a high-priority problem (profile picture not updating) that may negatively impact the user's experience. The 14-hour resolution time also seems long for a medium-priority ticket, which could be indicative of misclassification.",
-    "confidence": "0.946"
+    "constraint_analysis": "The ticket has a priority mismatch because the subject and description do not reflect an urgent issue (changing email), but the problem mentioned in the description (profile picture not updating) could potentially impact the user's account experience, which might require prompt attention. Additionally, the resolution time of 14 hours indicates that the current priority level may not be appropriate for addressing this issue within a reasonable timeframe for a medium priority ticket.",
+    "confidence": "0.942"
   },
   {
     "ticket_id": "TKT-100142",
@@ -211,8 +232,29 @@
         "interpretation": "submitted via email"
       }
     ],
-    "constraint_analysis": "This ticket has a priority mismatch because despite the subject indicating an urgent request to delete an account, the description pertains to a non-urgent issue about updating a profile picture. The resolution time of 18 hours also suggests that the current priority level (Medium) might not accurately reflect the urgency of the user's actual concern.",
-    "confidence": "0.845"
+    "constraint_analysis": "The priority mismatch in this ticket can be attributed to the subject line \"delete account - kid\" indicating an urgent and potentially sensitive issue, whereas the description only mentions a problem with profile picture update, which seems less urgent. However, the 18-hour resolution time assigned to this medium priority ticket suggests that there might be a delay in addressing the profile picture issue, which could potentially impact user experience.",
+    "confidence": "0.757"
+  },
+  {
+    "ticket_id": "TKT-100151",
+    "assigned_priority": "Critical",
+    "inferred_severity": "High",
+    "mismatch_type": "False Alarm",
+    "severity_delta": "-1",
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "21h",
+        "interpretation": "21h is 10.5x above expected 2h for Critical"
+      },
+      {
+        "signal": "channel",
+        "value": "web form",
+        "interpretation": "submitted via web form"
+      }
+    ],
+    "constraint_analysis": "The ticket has a priority mismatch as the described suspicious activity involving an unauthorized login from Russia and potential security breach should be categorized as High Priority, while it was initially assigned as Critical. However, without further context about the system or account involved, it's hard to definitively say if the resolution time of 21 hours is appropriate for this level of priority. The inference of \"ever message three idea card check\" might indicate additional details relevant to determining the ticket's priority but its meaning remains unclear from the provided information.",
+    "confidence": "0.839"
   },
   {
     "ticket_id": "TKT-100178",
@@ -237,8 +279,8 @@
         "interpretation": "submitted via web form"
       }
     ],
-    "constraint_analysis": "The priority mismatch in this ticket is due to the subject indicating a critical issue (\"account hacked\"), but the description contains unclear and potentially non-urgent language (\"course chair everybody idea vote thing\"). Additionally, the resolution time of 11 hours suggests that the current priority level (Critical) may not be justified based on the response time so far.",
-    "confidence": "0.854"
+    "constraint_analysis": "The ticket has a priority mismatch because although the subject suggests a critical issue (account hacked), the description contains nonsensical phrases such as \"course chair everybody idea vote thing,\" which makes it difficult to accurately assess the severity of the problem. Additionally, the resolution time of 11 hours for a supposedly critical ticket is unusually long, suggesting that the priority may have been overestimated.",
+    "confidence": "0.769"
   },
   {
     "ticket_id": "TKT-100193",
@@ -263,8 +305,8 @@
         "interpretation": "submitted via web form"
       }
     ],
-    "constraint_analysis": "The ticket has a priority mismatch due to the following reasons:\n\n1. The subject and description of the ticket suggest an immediate issue with the application (crashing), which typically warrants a higher priority than medium.\n2. Despite the problem affecting the settings tab, there's a reference to a \"special morning southern foot source\" in the description, which may appear unrelated to the technical issue at hand and could potentially contribute to misinterpretation of the severity of the problem.\n3. The resolution time being 29 hours for a medium-priority ticket is relatively long, indicating that it might have been given lower priority than its actual severity level requires.",
-    "confidence": "0.968"
+    "constraint_analysis": "The ticket has a priority mismatch due to the following reasons: Firstly, the issue described (the application crashing) suggests a high impact on user experience and productivity, which typically warrants a higher priority than assigned. Secondly, the resolution time of 29 hours indicates that the current priority may not align with the urgency required to resolve the issue promptly. Lastly, the use of non-standard language in the description (\"special morning southern foot source\") might have contributed to misinterpretation during initial triage, potentially leading to a lower priority assignment than it should have had.",
+    "confidence": "0.963"
   },
   {
     "ticket_id": "TKT-100207",
@@ -284,8 +326,8 @@
         "interpretation": "submitted via chat"
       }
     ],
-    "constraint_analysis": "The priority mismatch in this ticket can be attributed to two factors. Firstly, the reported issue significantly impacts the user's ability to perform their tasks (dashboard not loading any data), which suggests a High priority level. Secondly, the prolonged resolution time of 45 hours for a Medium-priority ticket indicates that the current prioritization might not accurately reflect the urgency of the problem.",
-    "confidence": "0.952"
+    "constraint_analysis": "The priority mismatch in this ticket can be attributed to the significant resolution time of 45 hours for a medium-priority issue, which suggests that it should have been assigned a higher priority due to its impact on the user's ability to access the dashboard and the prolonged wait for a resolution. Additionally, the issue is related to an API error (500) and the inability to load any data, indicating potential severe consequences if left unresolved for extended periods. Hence, this ticket should have been assigned high priority.",
+    "confidence": "0.953"
   },
   {
     "ticket_id": "TKT-100211",
@@ -310,8 +352,8 @@
         "interpretation": "submitted via email"
       }
     ],
-    "constraint_analysis": "The priority mismatch in this ticket is due to two reasons: firstly, the issue reported (screen freezes and application crashes) while opening the settings tab might impact the user's workflow but it doesn't seem immediately critical or time-sensitive. Secondly, the existence of a brother who also agrees with the problem suggests that the issue may not be unique to the user or their device, indicating a possible systemic issue rather than a Critical priority one. The resolution time of 22 hours further supports the assessment of Medium priority as it implies that the issue has been ongoing for some time without being resolved, suggesting a lower priority level.",
-    "confidence": "0.853"
+    "constraint_analysis": "The priority mismatch in this ticket is due to the following factors: although the issue (application crashing) seems significant, it's specific to a particular setting tab within the application. The term \"brother exists and agrees\" implies that another user has encountered the same problem, but without more details about its impact or severity, it's challenging to classify it as critical. The 22-hour resolution time also suggests that the issue might not be highly urgent, further justifying a medium priority.",
+    "confidence": "0.873"
   },
   {
     "ticket_id": "TKT-100213",
@@ -331,8 +373,8 @@
         "interpretation": "submitted via web form"
       }
     ],
-    "constraint_analysis": "The ticket priority mismatch is due to two reasons: Firstly, the resolution time of 71 hours for a medium-priority ticket is significantly longer than what is typically expected for such requests. Secondly, changing an email address is considered a routine task and may not necessarily require high priority, but the unusually long response time suggests otherwise.",
-    "confidence": "0.967"
+    "constraint_analysis": "The priority mismatch on this ticket is due to the high severity of the issue (2FA problems) and the prolonged resolution time (71 hours), despite it being initially assigned a medium priority. A more immediate response would be expected for issues related to account security and long wait times can negatively impact user experience.",
+    "confidence": "0.964"
   },
   {
     "ticket_id": "TKT-100228",
@@ -352,8 +394,8 @@
         "interpretation": "submitted via chat"
       }
     ],
-    "constraint_analysis": "The ticket has a priority mismatch because despite the subject indicating an issue with login (\"login failed\"), the description details a request for help with installing a patch on Windows 11, which seems unrelated to the initial problem. Moreover, the resolution time of 28 hours for a medium-priority ticket suggests that the urgency may not be accurately reflected.",
-    "confidence": "0.956"
+    "constraint_analysis": "The priority mismatch in this ticket is due to the subject line indicating a login issue (a potential urgent problem), while the description focuses on installing the latest patch on Windows 11, which is not directly related to the initial problem. Moreover, the resolution time of 28 hours for a medium priority ticket suggests that the current priority assignment may not accurately reflect the urgency of the issue.",
+    "confidence": "0.926"
   },
   {
     "ticket_id": "TKT-100253",
@@ -373,8 +415,8 @@
         "interpretation": "submitted via web form"
       }
     ],
-    "constraint_analysis": "The ticket has a priority mismatch due to the prolonged resolution time of 120 hours for a relatively simple issue such as not receiving a password reset email, which typically should be addressed more promptly (Medium assignment). Furthermore, the subject \"password reset - finish\" indicates that the user might have already gone through the initial process but is encountering another problem (Low priority inference).",
-    "confidence": "0.961"
+    "constraint_analysis": "The priority mismatch on this ticket can be attributed to two factors. Firstly, despite being assigned a medium priority, the user's issue (not receiving the password reset email) is preventing them from accessing their account, which could potentially impact their activities and enjoyment of the season. Secondly, the high wait time of 120 hours for resolution suggests that the current priority level may not adequately reflect the urgency of the user's concern.",
+    "confidence": "0.932"
   },
   {
     "ticket_id": "TKT-100254",
@@ -394,49 +436,7 @@
         "interpretation": "submitted via web form"
       }
     ],
-    "constraint_analysis": "The priority mismatch on this ticket is due to the nature of the request (permanent deletion of account and data) which should be classified as high priority, contrary to the current assigned medium priority. Additionally, the resolution time of 26 hours for such a critical request is longer than expected, further justifying the need for re-evaluation of its priority level.",
-    "confidence": "0.957"
-  },
-  {
-    "ticket_id": "TKT-100260",
-    "assigned_priority": "High",
-    "inferred_severity": "Medium",
-    "mismatch_type": "False Alarm",
-    "severity_delta": "-1",
-    "feature_evidence": [
-      {
-        "signal": "resolution_time",
-        "value": "24h",
-        "interpretation": "24h is 3.0x above expected 8h for High"
-      },
-      {
-        "signal": "channel",
-        "value": "web form",
-        "interpretation": "submitted via web form"
-      }
-    ],
-    "constraint_analysis": "The ticket has a priority mismatch because although it is assigned as high priority, the issue of not receiving a password reset email is generally considered medium-priority, and the resolution time estimated at 24 hours suggests that this is not an urgent matter. The channel being a web form also implies that it may not require immediate attention compared to other support channels such as phone or live chat.",
-    "confidence": "0.799"
-  },
-  {
-    "ticket_id": "TKT-100292",
-    "assigned_priority": "Low",
-    "inferred_severity": "Low",
-    "mismatch_type": "Consistent",
-    "severity_delta": "+0",
-    "feature_evidence": [
-      {
-        "signal": "resolution_time",
-        "value": "41h",
-        "interpretation": "41h is within normal range for Low"
-      },
-      {
-        "signal": "channel",
-        "value": "email",
-        "interpretation": "submitted via email"
-      }
-    ],
-    "constraint_analysis": "The priority mismatch in this ticket is due to the conflicting nature of the request. While the subject line indicates a 2FA issue which typically warrants a medium or high priority, the description details a request for account and data deletion, suggesting a more urgent concern (high priority). Additionally, the long resolution time (41 hours) for what should be considered a critical action of account deletion also contributes to the priority mismatch.",
-    "confidence": "0.932"
+    "constraint_analysis": "The priority mismatch in this ticket is due to the nature of the request (permanent account deletion and data removal) which typically requires a higher level of urgency, yet it has been assigned a medium priority. Additionally, the resolution time of 26 hours suggests that the current priority assignment may not be sufficient to ensure a timely resolution for such an important issue.",
+    "confidence": "0.978"
   }
 ]
