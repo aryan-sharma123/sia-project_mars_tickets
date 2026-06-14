@@ -16,7 +16,7 @@ Detects priority mismatches in CRM support tickets using self-supervised learnin
 
 
 
-<img src="results screenshots/Screenshot 2026-06-13 at 11.43.54 PM.png" alt="App Dashboard" width="500">
+<img src="results screenshots/Screenshot 2026-06-14 at 3.53.13 PM.png" alt="App Dashboard" width="500">
 
 
 ---
