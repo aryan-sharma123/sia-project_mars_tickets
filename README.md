@@ -64,7 +64,7 @@ For every flagged ticket — a structured JSON report with keyword evidence, res
 |---|---|
 | Accuracy | 90% |
 | Macro F1 | 0.89 |
-| Recall (Consistent) | 0.84 |
+| Recall (Consistent) | 0.83 |
 | Recall (Mismatch) | 0.99 |
 
 ---
