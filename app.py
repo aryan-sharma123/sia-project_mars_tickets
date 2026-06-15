@@ -8,25 +8,25 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 warnings.filterwarnings('ignore')
 
 
-def download_model_if_needed():
-    if not os.path.exists("models/distilbert_mismatch"):
-        from huggingface_hub import snapshot_download
-        os.makedirs("models", exist_ok=True)
-        snapshot_download(
-            repo_id="aryansharma72062/sia-distilbert",
-            local_dir="models/distilbert_mismatch",
-            ignore_patterns=["res_bounds.pkl"]
-        )
-    if not os.path.exists("models/res_bounds.pkl"):
-        from huggingface_hub import hf_hub_download
-        os.makedirs("models", exist_ok=True)
-        hf_hub_download(
-            repo_id="aryansharma72062/sia-distilbert",
-            filename="res_bounds.pkl",
-            local_dir="models"
-        )
+# def download_model_if_needed():
+#     if not os.path.exists("models/distilbert_mismatch"):
+#         from huggingface_hub import snapshot_download
+#         os.makedirs("models", exist_ok=True)
+#         snapshot_download(
+#             repo_id="aryansharma72062/sia-distilbert",
+#             local_dir="models/distilbert_mismatch",
+#             ignore_patterns=["res_bounds.pkl"]
+#         )
+#     if not os.path.exists("models/res_bounds.pkl"):
+#         from huggingface_hub import hf_hub_download
+#         os.makedirs("models", exist_ok=True)
+#         hf_hub_download(
+#             repo_id="aryansharma72062/sia-distilbert",
+#             filename="res_bounds.pkl",
+#             local_dir="models"
+#         )
 
-download_model_if_needed()
+# download_model_if_needed()
 
 
 
@@ -106,14 +106,15 @@ def load_model():
     dev = (torch.device("mps") if torch.backends.mps.is_available()
            else torch.device("cuda") if torch.cuda.is_available()
            else torch.device("cpu"))
-    tok = DistilBertTokenizer.from_pretrained("models/distilbert_mismatch")
-    mdl = DistilBertForSequenceClassification.from_pretrained("models/distilbert_mismatch")
+    tok = DistilBertTokenizer.from_pretrained("aryansharma72062/sia-distilbert")
+    mdl = DistilBertForSequenceClassification.from_pretrained("aryansharma72062/sia-distilbert")
     mdl.to(dev)
     mdl.eval()
     bounds = {}
-    if os.path.exists("models/res_bounds.pkl"):
-        with open("models/res_bounds.pkl", "rb") as f:
-            bounds = pickle.load(f)
+    from huggingface_hub import hf_hub_download
+    bounds_path = hf_hub_download(repo_id="aryansharma72062/sia-distilbert", filename="res_bounds.pkl")
+    with open(bounds_path, "rb") as f:
+        bounds = pickle.load(f)
     return mdl, tok, dev, bounds
 
 
