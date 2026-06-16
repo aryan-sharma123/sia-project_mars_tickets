@@ -101,8 +101,7 @@ def get_inferred(res, priority, tlen, text, channel, res_bounds):
 
 @st.cache_resource
 def load_model():
-    if not os.path.exists("models/distilbert_mismatch"):
-        return None, None, None, None
+    
     dev = (torch.device("mps") if torch.backends.mps.is_available()
            else torch.device("cuda") if torch.cuda.is_available()
            else torch.device("cpu"))
